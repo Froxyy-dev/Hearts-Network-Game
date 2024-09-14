@@ -13,11 +13,11 @@
 #include <fstream>
 #include <sstream>
 
-#include "ServerContext.h"
-#include "common.h"
-#include "err.h"
-#include "serwer-common.h"
-#include "serwer-communicator.h"
+#include "server/ServerContext.h"
+#include "server/serwer-common.h"
+#include "server/serwer-communicator.h"
+#include "common/common.h"
+#include "err/err.h"
 
 class ServerCroupier {
   private:

@@ -55,6 +55,54 @@ The server and clients communicate using TCP sockets and exchange ASCII messages
 - `tricks`: Display the tricks taken so far.
 - `!<card>`: Play a specific card (e.g., `!10C` for the 10 of clubs).
 
+## Project Structure
+```
+project/
+├── src/
+│   ├── client/
+│   │   ├── ClientContext.cpp
+│   │   ├── ClientPlayer.cpp
+│   │   ├── klient-common.cpp
+│   │   ├── klient-communicator.cpp
+│   │   ├── klient-parser.cpp
+│   ├── server/
+│   │   ├── ServerContext.cpp
+│   │   ├── ServerCroupier.cpp
+│   │   ├── serwer-common.cpp
+│   │   ├── serwer-communicator.cpp
+│   │   ├── serwer-parser.cpp
+│   ├── common/
+│   │   ├── common.cpp
+│   ├── err/
+│   │   ├── err.cpp
+│   ├── kierki-klient.cpp
+│   └── kierki-serwer.cpp
+├── include/
+│   ├── client/
+│   │   ├── ClientContext.h
+│   │   ├── ClientPlayer.h
+│   │   ├── klient-common.h
+│   │   ├── klient-communicator.h
+│   │   ├── klient-parser.h
+│   ├── server/
+│   │   ├── ServerContext.h
+│   │   ├── ServerCroupier.h
+│   │   ├── serwer-common.h
+│   │   ├── serwer-communicator.h
+│   │   ├── serwer-parser.h
+│   ├── common/
+│   │   ├── common.h
+│   └── err/
+│       └── err.h
+├── bin/
+│   ├── kierki-klient
+│   ├── kierki-serwer
+├── LICENSE
+├── README.md
+└── Makefile
+```
+
+
 ## Building and Running
 
 ### Prerequisites:
@@ -69,12 +117,12 @@ To compile both the server and client, run:
 make
 ```
 
-This will create two binaries: `kierki-serwer` and `kierki-klient`.
+This will create two binaries in bin/ directory: `kierki-serwer` and `kierki-klient`.
 
 ### Running the Server
 
 ```bash
-./kierki-serwer -f <game-definition-file> [-p <port>] [-t <timeout>]
+./bin/kierki-serwer -f <game-definition-file> [-p <port>] [-t <timeout>]
 ```
 
 - `-f`: Specifies the game definition file.
@@ -84,7 +132,7 @@ This will create two binaries: `kierki-serwer` and `kierki-klient`.
 ### Running the Client
 
 ```bash
-./kierki-klient -h <host> -p <port> -N/E/S/W [-4/-6] [-a]
+./bin/kierki-klient -h <host> -p <port> -N/E/S/W [-4/-6] [-a]
 ```
 
 - `-h`: Specifies the server IP or hostname.

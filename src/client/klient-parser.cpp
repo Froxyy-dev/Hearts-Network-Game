@@ -1,4 +1,4 @@
-#include "klient-parser.h"
+#include "client/klient-parser.h"
 
 /// @brief Returns true if character is client place.
 static bool isClientPlace(char c) {

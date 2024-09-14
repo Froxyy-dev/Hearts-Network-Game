@@ -1,4 +1,4 @@
-#include "ServerCroupier.h"
+#include "server/ServerCroupier.h"
 
 void ServerCroupier::closeConnectionWithPlayer(int index) {
     serverContext.closeConnection(index, true);

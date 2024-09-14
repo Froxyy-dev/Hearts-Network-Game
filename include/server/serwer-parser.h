@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#include "common.h"
-#include "err.h"
-#include "serwer-common.h"
+#include "server/serwer-common.h"
+#include "common/common.h"
+#include "err/err.h"
 
 void parseUserInput(int argc, char **argv, ServerArguments &serverArguments,
                     ServerStatus &server_status);

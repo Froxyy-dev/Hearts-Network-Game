@@ -12,11 +12,11 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#include "ClientContext.h"
-#include "common.h"
-#include "err.h"
-#include "klient-common.h"
-#include "klient-communicator.h"
+#include "client/ClientContext.h"
+#include "client/klient-common.h"
+#include "client/klient-communicator.h"
+#include "common/common.h"
+#include "err/err.h"
 
 class ClientPlayer {
   private:

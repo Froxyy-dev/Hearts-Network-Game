@@ -1,4 +1,4 @@
-#include "serwer-common.h"
+#include "server/serwer-common.h"
 
 /// @brief Function adds points to client.
 static void addPoints(ServerHand &hand, TABLE_PLACE client, int points) {

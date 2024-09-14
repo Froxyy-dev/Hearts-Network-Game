@@ -1,4 +1,4 @@
-#include "ClientPlayer.h"
+#include "client/ClientPlayer.h"
 
 void ClientPlayer::clientInitiate() {
     clientContext.initiateSending(getIamMessage(clientArguments));

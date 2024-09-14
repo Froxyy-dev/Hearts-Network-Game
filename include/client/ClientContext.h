@@ -1,7 +1,7 @@
 #ifndef KIERKI_CLIENTCONTEXT_H
 #define KIERKI_CLIENTCONTEXT_H
 
-#include "common.h"
+#include "common/common.h"
 #include "klient-common.h"
 
 class ClientContext {

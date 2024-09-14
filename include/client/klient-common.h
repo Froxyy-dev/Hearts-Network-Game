@@ -32,7 +32,7 @@
 #include <string>
 #include <sys/poll.h>
 
-#include "common.h"
+#include "common/common.h"
 
 namespace ClientConstants {
 const int USER_INDEX = 0;

@@ -14,10 +14,10 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "ServerCroupier.h"
-#include "err.h"
-#include "serwer-common.h"
-#include "serwer-parser.h"
+#include "server/ServerCroupier.h"
+#include "server/serwer-common.h"
+#include "server/serwer-parser.h"
+#include "err/err.h"
 
 /// @brief Function setups server.
 int setupServer(ServerArguments &serverArguments) {

@@ -1,4 +1,4 @@
-#include "klient-common.h"
+#include "client/klient-common.h"
 
 /// @brief Displays cards from vector.
 void displayCardsVector(std::vector<Card> &cards, bool endWithDot) {

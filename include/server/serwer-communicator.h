@@ -7,10 +7,10 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#include "ServerContext.h"
-#include "common.h"
-#include "err.h"
-#include "serwer-common.h"
+#include "server/ServerContext.h"
+#include "server/serwer-common.h"
+#include "common/common.h"
+#include "err/err.h"
 
 TABLE_PLACE parseIam(const std::string &message);
 

@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /// @brief Returns true if message prefix is IAM.
 bool canBeIam(const std::string &message) {

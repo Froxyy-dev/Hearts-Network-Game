@@ -1,4 +1,4 @@
-#include "err.h"
+#include "err/err.h"
 
 [[noreturn]] void sysFatal(const char* fmt, ...) {
     va_list fmt_args;

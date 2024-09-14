@@ -1,4 +1,4 @@
-#include "serwer-parser.h"
+#include "server/serwer-parser.h"
 
 static int readTimeout(char const *string) {
     if (strlen(string) > 7) {

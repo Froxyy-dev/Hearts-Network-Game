@@ -21,11 +21,11 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-#include "ClientPlayer.h"
-#include "common.h"
-#include "err.h"
-#include "klient-common.h"
-#include "klient-parser.h"
+#include "client/ClientPlayer.h"
+#include "client/klient-common.h"
+#include "client/klient-parser.h"
+#include "common/common.h"
+#include "err/err.h"
 
 struct addrinfo *getAddrinfo(const char *host, ClientArguments &clientArguments) {
     struct addrinfo hints;

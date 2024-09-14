@@ -6,9 +6,9 @@
 #include <sys/socket.h>
 #include <unistd.h>
 
-#include "common.h"
-#include "err.h"
-#include "klient-common.h"
+#include "client/klient-common.h"
+#include "common/common.h"
+#include "err/err.h"
 
 void parseUserInput(int argc, char **argv, ClientArguments &clientArguments);
 

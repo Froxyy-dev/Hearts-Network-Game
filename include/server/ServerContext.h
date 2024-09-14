@@ -3,8 +3,8 @@
 
 #include <unistd.h>
 
-#include "common.h"
-#include "serwer-common.h"
+#include "server/serwer-common.h"
+#include "common/common.h"
 
 class ServerContext {
   private:

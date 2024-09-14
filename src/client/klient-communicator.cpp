@@ -1,4 +1,4 @@
-#include "klient-communicator.h"
+#include "client/klient-communicator.h"
 
 /// FUNCTIONS FOR DISPLAYING MESSAGES FROM SERVER. ///
 
